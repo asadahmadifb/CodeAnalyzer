@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+	  <!-- این تنظیمات برای فعال کردن تحلیلگرها ضروری است -->
+	  <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+	  <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+	  <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+	  <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+	  <!-- سطح جزئیات برای دیباگ -->
+	  <AnalysisLevel>latest</AnalysisLevel>
+	  
+	  <UseCustomAnalyzer>true</UseCustomAnalyzer>
+
+	  <EnableNETAnalyzers>true</EnableNETAnalyzers>
+
+	  <!-- تبدیل هشدارها به خطا - اما .editorconfig اولویت دارد -->
+	  <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	  
+	  <WarningsAsErrors>$(WarningsAsErrors);NAMING001</WarningsAsErrors>
+
+
+	  <!-- برای نمایش بهتر خطاها -->
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+	  <DebugType>embedded</DebugType>
+	  
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MyCustomAnalyzer\CodeAnalyzer.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
+  </ItemGroup>
+
+</Project>

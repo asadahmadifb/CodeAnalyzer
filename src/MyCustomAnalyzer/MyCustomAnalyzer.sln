@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAnalyzer", "CodeAnalyzer.csproj", "{4D5FB824-8168-4D9C-8D6D-11C4D45E43E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAnalyzer.Test", "..\..\test\ConsoleApp1\CodeAnalyzer.Test.csproj", "{F79948AB-C263-4F87-BA71-A589CF955CAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D5FB824-8168-4D9C-8D6D-11C4D45E43E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D5FB824-8168-4D9C-8D6D-11C4D45E43E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D5FB824-8168-4D9C-8D6D-11C4D45E43E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D5FB824-8168-4D9C-8D6D-11C4D45E43E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79948AB-C263-4F87-BA71-A589CF955CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79948AB-C263-4F87-BA71-A589CF955CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79948AB-C263-4F87-BA71-A589CF955CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79948AB-C263-4F87-BA71-A589CF955CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDC607D8-FB6B-41EC-80E4-7AC9B13064E9}
+	EndGlobalSection
+EndGlobal
